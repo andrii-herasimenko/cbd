@@ -991,13 +991,13 @@ select {
       font-weight: 300;
       letter-spacing: 5.04px; }
       .ba-accordion li .ba-accordion__toggle:before {
-        content: url("/img/accordion/plus.svg");
+        content: url("../img/accordion/plus.svg");
         padding-right: 38px; }
 
 .ba-reviews-slide-section {
   position: relative;
   padding: 200px 15px;
-  background: linear-gradient(0deg, rgba(28, 32, 11, 0.6), rgba(28, 32, 11, 0.6)), url("/img/reviews-slider/banner.jpg") center center no-repeat;
+  background: linear-gradient(0deg, rgba(28, 32, 11, 0.6), rgba(28, 32, 11, 0.6)), url("../img/reviews-slider/banner.jpg") center center no-repeat;
   background-size: cover; }
 
 .ba-reviews-slider {
