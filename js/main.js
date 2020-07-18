@@ -24,8 +24,8 @@ productSlider.slick({
 	slidesToShow: 3,
 	slidesToScroll: 1,
 	appendArrows: $('.ba-product-slider-arrows'),
-	prevArrow: '<button id="prev" type="button" class="ba-product-slider-arrows__item ba-product-slider-arrows--left"><img src="/img/product-slider/left.svg" alt=""></button>',
-	nextArrow: '<button id="next" type="button" class="ba-product-slider-arrows__item ba-product-slider-arrows--right"><img src="/img/product-slider/arrow.svg" alt=""></button>',
+	prevArrow: '<button id="prev" type="button" class="ba-product-slider-arrows__item ba-product-slider-arrows--left"><img src="./img/product-slider/left.svg" alt=""></button>',
+	nextArrow: '<button id="next" type="button" class="ba-product-slider-arrows__item ba-product-slider-arrows--right"><img src="./img/product-slider/arrow.svg" alt=""></button>',
 	responsive: [
 		{
 			breakpoint: 970,
@@ -49,8 +49,8 @@ reviewsSlider.slick({
 	slidesToScroll: 1,
 	fade: true,
 	appendArrows: $('.ba-reviews-slider-arrows'),
-	prevArrow: '<button id="prev" type="button" class="ba-reviews-slider-arrows__item ba-reviews-slider-arrows--left"><img src="/img/reviews-slider/left.svg" alt=""></button>',
-	nextArrow: '<button id="next" type="button" class="ba-reviews-slider-arrows__item ba-reviews-slider-arrows--right"><img src="/img/reviews-slider/right.svg" alt=""></button>'
+	prevArrow: '<button id="prev" type="button" class="ba-reviews-slider-arrows__item ba-reviews-slider-arrows--left"><img src="./img/reviews-slider/left.svg" alt=""></button>',
+	nextArrow: '<button id="next" type="button" class="ba-reviews-slider-arrows__item ba-reviews-slider-arrows--right"><img src="./img/reviews-slider/right.svg" alt=""></button>'
 })
 $('.ba-accordion__toggle').click(function(e) {
 	e.preventDefault();
