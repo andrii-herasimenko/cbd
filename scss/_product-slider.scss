@@ -1,0 +1,110 @@
+.ba-product-slider-section {
+  padding: 100px 0 50px;
+  }
+.ba-product-slider {
+  max-width: 1820px;
+  margin: 0 auto;
+  padding-top: 70px;
+  overflow: hidden;
+  &__item {
+    width: 33%;
+    background-color: #ffffff;
+    margin: 0 20px;
+  }
+}
+.ba-product-slide{
+  max-width: 600px;
+  @media (max-width: 666px) {
+    max-width: none;
+  }
+  &__wrapper {
+    height: 100%;
+  }
+  &__container {
+    position: relative;
+    height: calc(100% - 75px );
+    display: flex;
+    padding: 40px 0 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d7debe;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 96px;
+      height: 15px;
+      margin: 0 auto;
+      background: url(../img/product-slider/stars.svg) no-repeat;
+    }
+  }
+  &__title {
+    margin: 0;
+    padding: 15px + 21px 30px 41px;
+  }
+  //&__stars {
+  //
+  //  &--4 {
+  //    width: 96px - 17px;
+  //  }
+  //}
+  &__image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &__footer {
+    width: 100%;
+    height: 75px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    border-top: none;
+    background-color: #f1f1f1;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+    background-color: #6e774a;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    &:after{
+      content: '';
+      display: block;
+      margin-left: 15px;
+      width: 40px;
+      height: 1px;
+      background-color: #ffffff;
+    }
+  }
+}
+.ba-product-slider-arrows {
+  text-align: center;
+  padding-top: 45px;
+  &__item {
+    background-color: transparent;
+    border: none;
+    padding: 0 ;
+    outline: none;
+  }
+  &--right{
+    margin-left: 40px;
+  }
+}
+.slick-list {
+  margin: 0 -20px;
+}
+.slick-track
+{
+  display: flex !important;
+}
+.slick-slide
+{
+  height: inherit !important;
+}

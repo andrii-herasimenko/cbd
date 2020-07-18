@@ -1,0 +1,78 @@
+.ba-about__links{
+	border-bottom:2px solid #6e774a;
+	padding-top: 30px;
+	@media screen and (min-width:640px){
+		padding-left: 100px;
+		max-width: 970px;
+	}
+	@media screen and (min-width:1024px){
+		margin-bottom: 80px;
+	}
+	&-link{
+		text-decoration: none;
+		font: 400  16px "Oswald", sans-serif;
+		color: #1c1c1b;
+		text-transform: uppercase;
+		padding-right: 10px;
+		@media screen and (min-width:640px){
+		text-decoration: none;
+		padding-right: 100px;
+		font: 400  30px "Oswald", sans-serif;
+		color: #1c1c1b;
+		letter-spacing: 1.8;
+		}
+		
+	}
+
+}
+.ba-about__content{
+		display: flex;
+		flex-direction: column;
+	@media screen and (min-width:640px){
+		flex-direction: row;
+	}
+	
+	&-text{
+		max-width: 415px;
+		&-title{
+			@media screen and (min-width:640px){
+				font: 400  24px "Oswald", sans-serif;
+				padding-bottom: 50px;
+			}
+			@media screen and (min-width:1024px){
+				font: 400  24px "Oswald", sans-serif;
+				padding-bottom: 50px;
+			}
+			
+		}
+		&-more{
+			color: #6e774a;
+			@media screen and (min-width:640px){
+				font: 400  18px "Oswald", sans-serif;
+				padding-bottom: 75px;
+				
+			}
+			@media screen and (min-width:1024px){
+				font: 400  18px "Oswald", sans-serif;
+				padding-bottom: 75px;
+			}
+			
+		}
+	}
+	&-images{
+		@media screen and (min-width:640px){
+			max-width: 565px;
+			padding-left: 100px;
+			padding-top: 30px;
+		}
+		@media screen and (min-width:1024px){
+			max-width: 565px;
+			padding-left: 200px;
+			padding-top: 80px;
+		}
+		
+	}
+}
+.tab2, .tab3 {
+	display: none;
+}

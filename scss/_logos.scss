@@ -1,0 +1,13 @@
+.ba-logos{
+	@media screen and (min-width:640px){
+		padding: 50px 0;
+	}
+	@media screen and (min-width:1024px){
+		padding: 100px 0;
+	}
+	
+	&-img{
+		margin: 0 auto;
+		display: block;
+	}
+}

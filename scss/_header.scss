@@ -1,0 +1,245 @@
+.ba-header {
+	
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: url(../img/intro-bg.png) center center no-repeat;
+	background-size: cover;
+	height: 100vh;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+	.ba-header {
+	  
+	}
+ }
+ .ba-header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+	@media screen and (max-width:1024px){
+		border:none;
+	}
+ }
+ 
+ .ba-nav__list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	align-items: center;
+ }
+ .ba-nav__item {
+	padding-left:50px;
+	line-height: 1;
+ }
+ .ba-nav__link {
+	color: #fff;
+	font: 400 16px/1 "Oswald", sans-serif;
+	display: block;
+	text-decoration: none;
+ }
+ .ba-nav__link:hover {
+	color: #000;
+	
+ }
+ .ba-logo{
+	 text-decoration: none;
+	 color:#fff;
+	 font: 400 30px/1 "Oswald", sans-serif;
+	 @media screen and (max-width:1024px){
+		 padding-left: 50px;
+		 padding-top: 40px;
+	 }
+ }
+ .ba-second-nav{
+	 @media screen and (max-width:1024px){
+		 display: none;
+	 }
+ }
+ .ba-second-nav__list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	align-items: center;
+ }
+ .ba-second-nav__item {
+	padding: 35px 35px 30px 35px;
+	line-height: 1;
+	border-left: 1px solid #fff
+ }
+ .ba-second-nav__link {
+	color: #fff;
+	font: 400 16px/1 "Oswald", sans-serif;
+	display: block;
+	text-decoration: none;
+ }
+ .ba-second-nav__link:hover {
+	color: #000;
+	
+ }
+ .ba-search{
+	 display: flex;
+	 & span {
+		padding-left: 10px;
+		
+	 }
+ }
+
+ .ba-menu-toggle {
+	width: 40px;
+	height: 24px;
+	border: none;
+	background: none;
+	border-radius: 0;
+	-webkit-appearance: none;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	padding: 0;
+	outline: none;
+	position: absolute;
+	left:85%;
+	top:50px;
+	
+ }
+ .ba-menu-toggle::before, .ba-menu-toggle::after {
+	content: "";
+	
+ }
+ .ba-menu-toggle::before, .ba-menu-toggle::after, .ba-menu-toggle span {
+	width: 100%;
+	height: 4px;
+	background: #fff;
+	transition: transform 0.3s, opacity 0.3s;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+	.ba-menu-toggle{
+	  display: none;
+	}
+ }
+ @media (max-width: 1023px) {
+	.ba-nav {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  height: 100vh;
+	  background: #4c9ef6ea;
+	  z-index: 10;
+	  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+	  width: 250px;
+	  padding: 30px 30px;
+	  opacity: 0;
+	  transition: transform 0.3s, opacity 0.3s;
+	  transform: translateX(-102%);
+	}
+ 
+	.ba-nav.open {
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+ 
+	.ba-nav.open ~ .ba-menu-toggle:before {
+	  transform: translateY(10px) rotate(-45deg);
+	}
+ 
+	.ba-nav.open ~ .ba-menu-toggle:after {
+	  transform: translateY(-10px) rotate(45deg);
+	}
+ 
+	.ba-nav.open ~ .ba-menu-toggle span {
+	  opacity: 0;
+	}
+ 
+	.ba-nav__list {
+	  display: block;
+	}
+ 
+	.ba-nav__item {
+	  padding: 0;
+	}
+ 
+	.ba-nav__item + .ba-nav__item {
+	  margin-top: 20px;
+	}
+ 
+	.ba-nav__link {
+	  font-size: 24px;
+	  text-transform: uppercase;
+	}
+ }
+ .ba-mobile{
+	 @media screen and (min-width:1024px){
+		 display:none;
+	 }
+ }
+
+
+ .ba-header__intro-inner{
+	 display: flex;
+	 flex-direction: column;
+	 align-items: flex-end;
+ }
+ .ba-header__intro-title{
+	 color: #fff;
+	 font: 400 40px "Oswald", sans-serif;
+	 padding-top: 50px;
+	 text-transform: uppercase;
+	 max-width: 635px;
+	 margin: 0;
+	 @media screen and (min-width:1024px){
+		 font-size: 55px;
+	 }
+ }
+ .ba-header__intro-title-second{
+	color: #fff;
+	font: 400 40px "Oswald", sans-serif;
+	text-transform: uppercase;
+	padding-bottom: 40px;
+	max-width: 635px;
+	margin: 0;
+	@media screen and (min-width:1024px){
+		font-size: 55px;
+	}
+ }
+ .ba-header__intro-second-title{
+	 margin: 0;
+	 color: #b9c2a9;
+	 font: 300  24px "Oswald", sans-serif;
+	 padding-bottom: 30px;
+ }
+ .ba-header__intro-btn{
+	 padding: 25px 100px 25px 40px;
+	 font: 400  20px "Oswald", sans-serif;
+	 text-decoration: none;
+	 text-transform: uppercase;
+	 color: #fff;
+	 border: 1px solid #f7f8f3;
+	 position: relative;
+	 margin-bottom: 35px;
+	 &:hover{
+		 color: #000;
+		 background: #637963;
+	 }
+	 &:after{
+		 content:'';
+		 width: 45px;
+		 height: 2px;
+		 background: #fff;
+		 position: absolute;
+		 top: 41px;
+		 left:180px
+	 }
+ }
+ .ba-header__intro-link{
+	font: 300  18px "Oswald", sans-serif;
+	color: #b9c2a9;
+	text-decoration: none;
+	&:hover{
+		color: #000;
+	}
+ }

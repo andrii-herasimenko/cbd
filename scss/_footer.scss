@@ -1,0 +1,90 @@
+.ba-footer {
+  padding: 170px 0 50px;
+}
+.ba-footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &:after, &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 2px;
+    background-color: #6e774a;
+  }
+}
+.ba-footer-navigation {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+  &__list {
+    padding-top: 20px;
+    flex: 0 0 33%;
+    text-align: center;
+    @media (max-width: 800px) {
+      &:first-child {
+        order: 0;
+      }
+      &:last-child {
+        order: 1;
+      }
+      &:nth-child(2) {
+        order: 2;
+      }
+    }
+  }
+  &__item {
+    display: block;
+    color: #6e774a;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3.92px;
+    text-decoration: none;
+  }
+
+}
+.ba-subscribe {
+  &__title {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 75px;
+    text-transform: uppercase;
+    /* Text style for "Subscribe" */
+    letter-spacing: 2.7px;
+    &:before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 55px;
+      background-color: #6e774a;
+    }
+  }
+  &__input {
+    width: 100%;
+    max-width: 180px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #ced6af ;
+  }
+}
+.ba-social {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-copy {
+  padding-top: 50px;
+  text-align: center;
+}

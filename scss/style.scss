@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+
+@import "normalize";
+@import "layout";
+@import "elements";
+@import "header";
+@import "logos";
+@import "about";
+@import "product-slider";
+@import "accordion";
+@import "reviews-slide";
+@import "footer";
+
+body{
+	font-family: Oswald, sans-serif;
+	background-color: #f7f8f3;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1200px;
+}
+.ba-global-title{
+	margin: 0;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
